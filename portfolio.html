@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aso Uduma | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+  <!-- Header will be injected here -->
+  <div id="header"></div>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="section-padding portfolio-section" data-bg-animate>
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">My Portfolio</h2>
+      <p class="section-intro" data-animate="fade-up" style="transition-delay:0.1s;">
+        Every project tells a story — of challenges embraced, ideas refined, and solutions brought to life. 
+        Here’s a selection of my work that reflects my dedication to detail, creativity, and delivering results 
+        that truly make an impact.
+      </p>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons" data-animate="fade-up" style="transition-delay:0.15s;">
+        <button class="active" onclick="filterPortfolio(event, 'all')">Data Analyst</button>
+        <button onclick="filterPortfolio(event, 'web')">Copy Writer</button>
+        <button onclick="filterPortfolio(event, 'design')">Full‑Stack Engineer</button>
+        <button onclick="filterPortfolio(event, 'apps')">Prompt AI Engineer</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+
+        <!-- Project 1 -->
+        <div class="portfolio-item web" data-animate="fade-up">
+          <img src="assets/images/project6.png" alt="E‑Commerce Website">
+          <div class="overlay">
+            <h3>E‑Commerce Website</h3>
+            <p>Fully responsive online store with integrated payment gateway and product management dashboard.</p>
+            <small><strong>Tools:</strong> HTML5, CSS3, JavaScript, Stripe API, PHP</small>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-item design" data-animate="fade-up" style="transition-delay:0.15s;">
+          <img src="assets/images/project2.png" alt="Brand Identity Design">
+          <div class="overlay">
+            <h3>Brand Identity Design</h3>
+            <p>Complete brand package including logo, typography, and color palette for a tech startup.</p>
+            <small><strong>Tools:</strong> Adobe Illustrator, Photoshop, Figma</small>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-item apps" data-animate="fade-up" style="transition-delay:0.3s;">
+          <img src="assets/images/project3.png" alt="Task Management App">
+          <div class="overlay">
+            <h3>Task Management App</h3>
+            <p>Cross‑platform mobile app for organizing tasks, setting reminders, and tracking progress.</p>
+            <small><strong>Tools:</strong> React Native, Firebase, Node.js</small>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-item web" data-animate="fade-up" style="transition-delay:0.45s;">
+          <img src="assets/images/project5.png" alt="Portfolio Website">
+          <div class="overlay">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing projects, skills, and contact information.</p>
+            <small><strong>Tools:</strong> HTML5, CSS3, JavaScript, GitHub Pages</small>
+          </div>
+        </div>
+
+        <!-- Closing Call-to-Action -->
+        <div class="portfolio-cta" data-animate="fade-up" style="transition-delay:0.6s; text-align:center; margin-top:40px;">
+          <p>
+            Every project is a new opportunity to create something meaningful.  
+            If you’ve seen something here that inspires you, let’s collaborate and bring your next idea to life.
+          </p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:15px;">Start Your Project</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Aso's Portfolio. All rights reserved.</p>  
+
+  <!-- Footer will be injected here -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Simple Portfolio Filter
+    function filterPortfolio(event, category) {
+      const items = document.querySelectorAll('.portfolio-item');
+      const buttons = document.querySelectorAll('.filter-buttons button');
+
+      // Update active button
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Show/hide items
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* General page styling */
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Article content */
+article {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+article h2 {
+  color: #4e54c8;
+  margin-top: 1.5rem;
+}
+
+article p, article li {
+  font-size: 1.05rem;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.2rem;
+}
+
+/* Back to blog link */
+footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+footer a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #4e54c8;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+footer a:hover {
+  background: #3c40a0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  article {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}

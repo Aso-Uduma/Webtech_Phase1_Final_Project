@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Contact</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Header will be injected here -->
+  <div id="header"></div>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">Get In Touch</h2>
+      <div class="two-column">
+        
+        <!-- Contact Form -->
+        <div data-animate="fade-right">
+          <form action="https://formspree.io/f/mdklqyjq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required data-animate="fade-up" style="transition-delay:0.1s;">
+            <input type="email" name="email" placeholder="Your Email" required data-animate="fade-up" style="transition-delay:0.2s;">
+            <input type="text" name="subject" placeholder="Subject" data-animate="fade-up" style="transition-delay:0.3s;">
+            <textarea name="message" rows="5" placeholder="Your Message" required data-animate="fade-up" style="transition-delay:0.4s;"></textarea>
+            <input type="hidden" name="_next" value="thank-you.html">
+            <button type="submit" class="btn btn-primary" data-animate="fade-up" style="transition-delay:0.5s;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="map-responsive" data-animate="fade-up" style="transition-delay:0.5s;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d126827.59042184829!2d3.268912797727158!3d6.601831204519543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m5!1s0x103b9228fa2a3999%3A0xd7a8324bddbba1f0!2sIkeja%2C%20Lagos!3m2!1d6.601838!2d3.3514863!4m0!5e0!3m2!1sen!2sng!4v1758391628493!5m2!1sen!2sng"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div data-animate="fade-left" style="transition-delay:0.2s;">
+          <h3 data-animate="fade-up">Contact Information</h3>
+          <p data-animate="fade-up" style="transition-delay:0.1s;"><strong>Address:</strong> Julie Estate Oregun, Ikeja, Lagos</p>
+          <p data-animate="fade-up" style="transition-delay:0.2s;"><strong>Email:</strong> <a href="mailto:felixpeter230360@gmail.com">felixpeter230360@gmail.com</a></p>
+          <p data-animate="fade-up" style="transition-delay:0.3s;"><strong>Phone:</strong> +234 816 557 2202</p>
+          <div class="social-links" data-animate="fade-up" style="transition-delay:0.4s;">
+            <a href="https://web.facebook.com/profile/?fbid=740611122007893&set=a.105704242165254">Facebook</a> |  
+            <a href="https://x.com/aso_uduma">Twitter</a> |  
+            <a href="https://www.linkedin.com/in/aso_uduma">LinkedIn</a> |  
+            <a href="https://www.instagram.com/aso_uduma2">Instagram</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Aso's Portfolio. All rights reserved.</p>
+  </div>
+
+  <!-- Footer will be injected here -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
